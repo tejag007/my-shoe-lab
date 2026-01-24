@@ -50,7 +50,22 @@
                 margin-top: 20px;
         }
 
-        .shoe-card { 
+        .shoe-card img {
+            width: 100%;       /* Makes the image fill the card width */
+            height: 250px;     /* Forces a consistent height for all images */
+            object-fit: cover; /* Crops the image slightly to fill the area without stretching */
+            border-radius: 8px; /* Optional: gives images nice rounded corners to match cards */
+            display: block;    /* Removes extra bottom spacing */
+        }
+        
+        /* Ensure the cards themselves have a consistent layout */
+        .shoe-card {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%; /* Makes all cards in a row the same height */
+        }
+
+        /* .shoe-card { 
                 border: 1px solid #eee; 
                 padding: 15px; 
                 border-radius: 10px; 
@@ -60,7 +75,7 @@
         .shoe-card h3 { 
                 margin-top: 0; 
                 color: #2c3e50;
-        }
+        } */
 
         .tag { 
                 display: inline-block; 
