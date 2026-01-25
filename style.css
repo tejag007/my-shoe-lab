@@ -50,32 +50,43 @@
                 margin-top: 20px;
         }
 
+        .shoe-card {
+                background: #fff;
+                border-radius: 12px;
+                padding: 15px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                /* Keeps content aligned even if text lengths vary */
+                display: flex;
+                flex-direction: column;
+        }
+
         .shoe-card img {
-            width: 100%;       /* Makes the image fill the card width */
-            height: 250px;     /* Forces a consistent height for all images */
-            object-fit: cover; /* Crops the image slightly to fill the area without stretching */
-            border-radius: 8px; /* Optional: gives images nice rounded corners to match cards */
-            display: block;    /* Removes extra bottom spacing */
+                width: 100%;
+                /* Set a fixed height so all 3 images align perfectly at the top and bottom */
+                height: 280px; 
+                /* This prevents images from stretching; it crops them to fit the 280px box */
+                object-fit: contain; 
+                border-radius: 8px;
+                margin-bottom: 15px;
+        }
+
+        .contact-btn {
+                background-color: #d59a94; 
+                color: white !important;
+                padding: 12px 30px;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: bold;
+                display: inline-block;
+                transition: 0.3s ease;
+
+        }
+
+        .contact-btn:hover {
+                background-color: #8e8989;
+                transform: scale(1.05);
         }
         
-        /* Ensure the cards themselves have a consistent layout */
-        .shoe-card {
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%; /* Makes all cards in a row the same height */
-        }
-
-        /* .shoe-card { 
-                border: 1px solid #eee; 
-                padding: 15px; 
-                border-radius: 10px; 
-                background: #fafafa;
-        }
-
-        .shoe-card h3 { 
-                margin-top: 0; 
-                color: #2c3e50;
-        } */
 
         .tag { 
                 display: inline-block; 
